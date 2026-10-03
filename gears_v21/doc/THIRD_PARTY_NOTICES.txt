@@ -1,0 +1,56 @@
+KELLEY NONLINEAR SOLVERS
+
+The bundled classes/private/nsolve.m adapts and combines routines by
+C. T. (Tim) Kelley, distributed in John Burkardt's KELLEY collection:
+https://people.sc.fsu.edu/~jburkardt/m_src/kelley/kelley.html
+
+Upstream solvers:
+  nsol.m  - Newton/Shamanskii/Chord
+  nsola.m - Newton-Krylov-Armijo
+https://people.sc.fsu.edu/~jburkardt/m_src/kelley/nsol.m
+https://people.sc.fsu.edu/~jburkardt/m_src/kelley/nsola.m
+
+Associated upstream routines include diffjac, dirder, fdkrylov, fdgmres,
+fdcgstab, fdtfqmr, givapp and parab3p. Each of these source files identifies
+Tim Kelley as author and explicitly states the MIT licence (checked
+2 October 2026). Retain the applicable author and permission notices when
+redistributing the adapted source.
+Licence terms: https://opensource.org/license/mit
+
+The local file is named nsolve.m. It combines the two solver paths and adds
+name-value options, analytic-Jacobian Newton, root polishing and diagnostics.
+It is an adaptation, not an unchanged copy or a simple file rename.
+This notice identifies the upstream licence; it does not assign a licence
+to unrelated files in the gears package.
+
+Algorithm reference:
+C. T. Kelley, Iterative Methods for Linear and Nonlinear Equations,
+SIAM, 1995. ISBN 978-0-89871-352-7.
+https://doi.org/10.1137/1.9781611970944
+
+External bibliographic references in verification scripts are sources of
+comparison data, not bundled publications or additional runtime dependencies.
+
+MIT LICENSE TERMS FOR THE UPSTREAM KELLEY ROUTINES
+
+Author identified in the upstream source headers: Tim Kelley.
+Those headers provide no separate copyright year or copyright notice.
+The MIT permission and warranty terms are reproduced below.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
